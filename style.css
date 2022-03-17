@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+html,
+body {
+  height: 100%;
+  max-width: 1440px;
+}
+body {
+  font-size: 16px;
+  font-family: "poppins", sans-serif;
+  background-color: hsl(0, 100%, 74%);
+}
+#page {
+  padding: 30px 10px 20px 10px;
+}
+@media (min-width: 768px) {
+  #page {
+    height: 100%;
+    background-image: url("images/bg-intro-desktop.png");
+    background-repeat: repeat;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  #page > div {
+    width: 45%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #page #disc {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+}
+#page #disc h1 {
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 20px;
+}
+#page #disc p {
+  font-size: 13px;
+  color: white;
+  font-weight: 400;
+}
+
+#page #form-container h4 {
+  text-align: center;
+  background-color: hsl(248, 32%, 49%);
+  padding: 10px;
+  border-radius: 7px;
+  font-size: 13px;
+  font-weight: 500;
+  color: white;
+  margin-bottom: 10px;
+}
+#page #form-container h4 span {
+  color: hsl(246, 25%, 77%);
+}
+#page #form-container form {
+  background-color: white;
+  padding: 20px;
+  border-radius: 7px;
+}
+#page #form-container form input {
+  /*display: block;*/
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+  border: 1px solid hsl(246, 25%, 77%);
+  outline: none;
+  border-radius: 4px;
+  padding: 10px 10px 10px 20px;
+  font-size: 13px;
+  font-weight: 500;
+}
+#page #form-container form p i {
+  color: hsl(0, 100%, 74%);
+  font-size: 16px;
+  display: none;
+  margin-left: -30px;
+}
+#page #form-container form input#submit {
+  background-color: hsl(154, 59%, 51%);
+  text-align: center;
+  color: white;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+#page #form-container form p {
+  font-size: 8px;
+  color: hsl(246, 25%, 77%);
+  font-weight: 400;
+  text-align: center;
+}
+#page #form-container form p a {
+  font-size: 8px;
+  font-weight: 500;
+  color: hsl(0, 100%, 74%);
+}
+
+span.message {
+  display: block;
+  float: right;
+  margin-right: 13px;
+  margin-top: -10px;
+  margin-bottom: 10px;
+  font-size: 8px;
+  color: hsl(0, 100%, 74%);
+  font-weight: 400;
+}
+.field.error {
+  border-color: hsl(0, 100%, 74%);
+}
+
+/*screen*/
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
